@@ -2,48 +2,525 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Campus</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+  <div class="container">
+    <div class="row" id="main">
 
-    <!-- Main content -->
-    <div class="container">
-        <div class="row" id="main">
-            <div class="col">
-                <h1>Welcome to our first website</h1>
-                <p>This is a text to greet our visitors.</p>
+
+      <!-- Navbar -->
+      <nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="https://i.ibb.co/mCsQfQS/cinema-campus.png" alt="Cinema Campus">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Películas</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Eventos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Por tiempo limitado</a></li>
+                    <li><a class="dropdown-item" href="#">Maratones</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Eventos</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="¿Qué quieres ver hoy?" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
             </div>
+          </div>
+        </nav>
+      </nav>
+
+      <!-- Main content -->
+
+      <!-- Carrouser main -->
+      <div class="container">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.ibb.co/GTjk6Wg/web-banner.jpg" class="d-block w-100" alt="..."
+                style="border-radius: 10px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.ibb.co/mzpPy7G/share.jpg" class="d-block w-100" alt="..."
+                style="border-radius: 10px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.ibb.co/Db0mfB0/interestellarrrrrr.jpg" class="d-block w-100" alt="..."
+                style="border-radius: 10px;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="row" id="section1">
-            <div class="col">
-                <h2>Website title h2</h2>
-                <p>This is a paragraph under the h2 title.</p>
-            </div>
-            <div class="col">
-                <h2>Website title h2</h2>
-                <p>This is a paragraph under the h2 title.</p>
-            </div>
-            <div class="col">
-                <h2>Website title h2</h2>
-                <p>This is a paragraph under the h2 title.</p>
-            </div>
+      </div>
+
+      <div class="row">
+        <div class="row align-items-start" style="text-align: center;">
+
+          <!-- 1 Columna -->
+          <div class="col">
+            <center>
+              <h2>Estrenos de la semana</h2>
+              <p>Los últimos lanzamientos disponibles</p>
+
+              <!-- Venom -->
+
+              <div class="card" style="width: 24rem; height: 23rem;">
+                <img src="https://i.ibb.co/tKbfpXQ/venom-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">VENOM: EL ÚLTIMO BAILE</h5>
+                  <p class="card-text">Eddie y Venom se enfrentan a su última aventura juntos tras estar a la fuga.
+                  </p>
+                  <a class="btn btn-secondary btn-sm" href="https://www.youtube.com/watch?v=wuXjTZjYZQY"
+                    role="button">ver
+                    tráiler</a>
+
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Horarios
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">16:15 sala 1</a></li>
+                    <li><a class="dropdown-item" href="#">18:30 sala IMAX</a></li>
+                    <li><a class="dropdown-item" href="#">21:00 sala 1</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Más sesiones</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <p>
+
+                <!-- Smile2 -->
+              <div class="card" style="width: 24rem; height: 23rem;">
+                <img src="https://i.ibb.co/XyGVnyN/la-sonrisa-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SMILE 2</h5>
+                  <p class="card-text">Secuela de la exitosa película de terror de 2022, esta vez con Naomi Scott como
+                    protagonista.</p>
+                  <a class="btn btn-secondary btn-sm" href="https://www.youtube.com/watch?v=69GcScd6sGk"
+                    role="button">ver
+                    tráiler</a>
+
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Horarios
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">16:30 sala 2</a></li>
+                    <li><a class="dropdown-item" href="#">18:15 sala 1</a></li>
+                    <li><a class="dropdown-item" href="#">20:20 sala 2</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Más sesiones</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <p>
+
+                <!-- RobotSalvaje -->
+              <div class="card" style="width: 24rem; height: 23rem;">
+                <img src="https://i.ibb.co/b12y9X3/robot-salvajeee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ROBOT SALVAJE</h5>
+                  <p class="card-text">Un robot se somete a su mayor aventura en un entorno completamente salvaje que
+                    le
+                    cambiará.</p>
+                  <a class="btn btn-secondary btn-sm" href="https://www.youtube.com/watch?v=8-_4gvrHAys"
+                    role="button">ver
+                    tráiler</a>
+
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Horarios
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">17:00 sala 3</a></li>
+                    <li><a class="dropdown-item" href="#">18:40 sala 2</a></li>
+                    <li><a class="dropdown-item" href="#">22:30 sala 3</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Más sesiones</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+
+          <!-- 2 Columna -->
+          <div class="col">
+            <center>
+              <h2>Cartelera</h2>
+              <p>Todas las películas disponibles</p>
+
+              <div class="card" style="width: 24rem; height: 23rem;">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://i.ibb.co/S6kkPXM/al-lado.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>LA HABITACIÓN DE AL LADO</h5>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="https://i.ibb.co/fFbqTvM/bitel2.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>BITELCHÚS BITELCHÚS</h5>
+
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="https://i.ibb.co/N26qyrZ/sustance.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>LA SUSTANCIA</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </center>
+
+            <p>
+
+              <center>
+                <div class="card" style="width: 24rem;">
+                  <div class="card-header">
+                    Cartelera completa
+                  </div>
+                  <div class="list-group" style="width: 24rem;">
+                    <a href="https://youtu.be/5nWH2Pd-x-c?si=-5HwoXLmpL5mEI_a"
+                      class="list-group-item list-group-item-action list-group-item-dark">Alien: Romulus</a>
+                    <a href="https://youtu.be/aIgkd0ZzcFk?si=IjwKKHd2d4IIa4E1"
+                      class="list-group-item list-group-item-action list-group-item-dark">Bad Gyal: La Joia</a>
+                    <a href="https://youtu.be/bffGA7Vh0uE?si=9RZAZdi8B6iib094"
+                      class="list-group-item list-group-item-action list-group-item-dark">Bitelchús Bitelchús</a>
+                    <a href="https://www.youtube.com/watch?v=QtZPjL_CbQI"
+                      class="list-group-item list-group-item-action list-group-item-dark">Joker: Folie à deux</a>
+                    <a href="https://www.youtube.com/watch?v=UoSSbmD9vqc"
+                      class="list-group-item list-group-item-action list-group-item-dark">Interestellar (10º
+                      aniversario)</a>
+                    <a href="https://www.youtube.com/watch?v=30jaJwZIw3E"
+                      class="list-group-item list-group-item-action list-group-item-dark">El llanto</a>
+                    <a href="https://www.youtube.com/watch?v=DI2EUVygrKY"
+                      class="list-group-item list-group-item-action list-group-item-dark">El 47</a>
+                    <a href="https://www.youtube.com/watch?v=43W8ZAtabNI"
+                      class="list-group-item list-group-item-action list-group-item-dark">La habitación de al lado</a>
+                    <a href="https://www.youtube.com/watch?v=sEfOVZDvHPU"
+                      class="list-group-item list-group-item-action list-group-item-dark">La infiltrada</a>
+                    <a href="https://www.youtube.com/watch?v=bb10YAiF8nE"
+                      class="list-group-item list-group-item-action list-group-item-dark">La sustancia</a>
+                    <a href="https://www.youtube.com/watch?v=g0mXI7dIlhY"
+                      class="list-group-item list-group-item-action list-group-item-dark">Megalópolis</a>
+                    <a href="https://www.youtube.com/watch?v=hq99V6sIcGA"
+                      class="list-group-item list-group-item-action list-group-item-dark">No hables con extraños</a>
+                    <a href="https://www.youtube.com/watch?v=8-_4gvrHAys"
+                      class="list-group-item list-group-item-action list-group-item-dark">Robot Salvaje</a>
+                    <a href="https://www.youtube.com/watch?v=1AdWjFnzwFs"
+                      class="list-group-item list-group-item-action list-group-item-dark">Shin Chan: el superhéroe</a>
+                    <a href="https://www.youtube.com/watch?v=69GcScd6sGk"
+                      class="list-group-item list-group-item-action list-group-item-dark">Smile 2</a>
+                    <a href="https://www.youtube.com/watch?v=vHylljZn9lg"
+                      class="list-group-item list-group-item-action list-group-item-dark">Transformers one</a>
+                    <a href="https://www.youtube.com/watch?v=wuXjTZjYZQY"
+                      class="list-group-item list-group-item-action list-group-item-dark">Venom: el último baile</a>
+                  </div>
+                </div>
+              </center>
+          </div>
+          
+          <!-- 3 Columna -->
+
+          <div class="col">
+            <center>
+              <h2>Próximamente</h2>
+              <p>Muy pronto en cines</p>
+
+              <div class="card" style="width: 24rem; height: 23rem;">
+                <img src="https://i.ibb.co/bsG7Lx2/gladiator-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GLADIATOR II</h5>
+                  <p class="card-text">Estreno el 15 de noviembre. Preventa de entradas YA DISPONIBLE</p>
+                  <a class="btn btn-secondary btn-sm" href="https://www.youtube.com/watch?v=HCjuv9STNps"
+                    role="button">ver
+                    tráiler</a>
+
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Horarios
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">16:00 sala 4DX</a></li>
+                    <li><a class="dropdown-item" href="#">19:00 sala 1</a></li>
+                    <li><a class="dropdown-item" href="#">20:30 sala 2</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Más sesiones</a></li>
+                  </ul>
+
+                </div>
+              </div>
+              <p>
+
+              <div class="card" style="width: 24rem; height: 23rem;">
+                <img src="https://i.ibb.co/GMrL6ch/wicked.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">WICKED</h5>
+                  <p class="card-text">Protagonizada por Ariana Grande y Cynthia Erivo. Estreno el 22 de noviembre</p>
+                  <a class="btn btn-secondary btn-sm" href="https://www.youtube.com/watch?v=JDSRDbFqc_E"
+                    role="button">ver
+                    tráiler</a>
+
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Horarios
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">A la venta el 1.11</a></li>
+                  </ul>
+                </div>
+              </div>
+              <p>
+
+              <div class="card" style="width: 24rem; height: 23rem;">
+                <img src="https://i.ibb.co/F6KcY1H/mufassasaaaa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUFASA: EL REY LEÓN</h5>
+                  <p class="card-text">La grandiosa historia de Mufasa junto a su hermano Scar. Estreno el 20 de
+                    diciembre</p>
+                  <a class="btn btn-secondary btn-sm" href="https://www.youtube.com/watch?v=0x_YL34QH5g"
+                    role="button">ver
+                    tráiler</a>
+
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Horarios
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Próximamente</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </center>
+          </div>
+
         </div>
+      </div>
+
+      <!-- 4 Columna -->
+
+      <div class="row">
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col">
+
+              <h2>Eventos</h2>
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="https://i.ibb.co/N9mgKwB/La-Joia-Bad-Gyal.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">BAD GYAL: La Joia</h5>
+                    <p class="card-text">Sesiones especiales junto a gente que formó parte de la gira nacional de
+                      Bad
+                      Gyal, La Joia.</p>
+                    <p class="card-text"><small class="text-body-secondary">EVENTO 24 DE OCTUBRE</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://i.ibb.co/hdpTyLD/maraton-terrifier.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Maratón Halloween de Terrifier</h5>
+                    <p class="card-text">Especial de Halloween con un maratón terrorífico-sangriento que incluye:
+                      Terrifier 1 (2016), Terrifier 2 (2022) y el estreno en exclusiva de Terrifier 3 (2024)</p>
+                    <p class="card-text"><small class="text-body-secondary">ESPECIAL 31 DE OCTUBRE</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://i.ibb.co/M9c1N30/party-cinema.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Fiesta del cine</h5>
+                    <p class="card-text">Regresa la fiesta del cine con su segunda edición anual, esta vez se
+                      llevará
+                      a cabo durante 4 días entre el 4 y el 7 de noviembre. Compra tus entradas a partir del 30 de
+                      octubre.</p>
+                    <p class="card-text"><small class="text-body-secondary">DEL 4 AL 7 DE NOVIEMBRE</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 5 Columna -->
+
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+
+            <center>
+              <h2>Productos de bar</h2>
+              <p>Sáltate las colas y consigue descuentos exclusivos en tu compra de bar online: desde packs de palomitas, nachos, pizzas y merchandaising de tu película favorita.</p>
+            </center>
+            <div class="card mb-3" style="max-width: 620px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://i.ibb.co/qdxw904/fondo32.jpg" class="img-fluid rounded-start" alt="..." style="max-height: 180px;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Menú palomitas</h5>
+                    <p class="card-text">Cubo de palomitas originales saladas o dulces de Cinema Campus, con dos bebidas a elegir con 20% compra online.</p>
+                    <a href="#" class="btn btn-danger">Descubre más</a>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            
+              <center>
+                <h2>Ponte en contacto con nosotros</h2>
+                <p>Cualquier duda te la resolveremos en la menor brevedad posible.</p>
+              </center>
+
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Consulta</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-danger">Enviar</button>
+                <p>
+              </form>
+            </div>
+          </div>
+
+          </div>
+    
+        </div>
+      </div>
+
+
+
+
+
+
+<!--  
+          <div class="row align-items-start">
+
+          <div class="col">
+            <center>
+            <h2>Productos de bar</h2>
+            <p>Sáltate las colas y consigue descuentos exclusivos en tu compra de bar online</p>
+          </center>
+            <div class="card mb-3" style="max-width: 580px; max-height: 195px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://i.ibb.co/qdxw904/fondo32.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Menú palomitas</h5>
+                    <p class="card-text">Cubo de palomitas originales saladas o dulces de Cinema Campus, con
+                      dos
+                      bebidas a elegir con 20% compra online.</p>
+                    <a href="#" class="btn btn-danger">Descubre más</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+-->
+          
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.
 js"></script>
+
+
+
+
+  </ul>
+  </footer>
+
+
+
+
 </body>
 
 </html>
